@@ -1,0 +1,283 @@
+/*css for all three pages*/
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+body {
+  background-color: rgb(192, 99, 193);
+}
+
+.wrapper {
+  width: 950px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-style: inset;
+  border-color: rgb(119, 21, 199);
+  margin: 25px auto 25px auto;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Press Start 2P';
+  text-align: center;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Press Start 2P';
+  text-align: center;
+}
+
+p {
+  font-family: 'Source Code Pro';
+  text-align: center;
+}
+
+li {
+  font-family: 'Source Code Pro';
+  text-align: center;
+}
+
+#nav {
+  background-color: rgb(192, 99, 193, 0.75);
+  overflow: hidden;
+}
+  
+#nav-contain {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+  
+#nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+  
+#nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block;
+  font-family: 'Press Start 2P';
+  color: #431d65;
+  font-size: medium;
+}
+  
+#nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+  
+#nav ul li a:hover {
+  background-color: rgb(85, 67, 133);
+  color: #f1e7fa;
+  text-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#onpage {
+  font-family: 'Press Start 2P';
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goodbye {
+  color: #f1e7fa;
+}
+
+/*css for the Welcome page*/
+
+#welcome_background {
+  background-image: url(../media/welcome_background2.jpg);
+  background-size: cover;
+}
+
+.welcome_img {
+  height: 350px;
+  display: block;
+  position: relative;
+  margin: 25px;
+  margin-left: 15px;
+  /*filter: drop-shadow(15px 15px 0px #a869de);*/
+  filter: drop-shadow(15px 20px 0px #9b67c8);
+  transition: height 0.5s, width 0.5s;
+}
+  
+.welcome_img:hover {
+  height: 355px;
+  width: auto;
+  transition: height 0.5s, width 0.5s;
+  transition-timing-function: ease-out;
+}
+
+#cat1 {
+  height: 350px;
+  display: block;
+  position: relative;
+  margin: 15px;
+  margin-top: 70px;
+  border: 3mm ridge #9b67c8;
+  transition: height 0.5s, width 0.5s;
+  transition: transform 0.5s ease-in-out;
+} 
+
+#cat1:hover {
+  transform: rotate(3deg);
+}
+
+#cat2 {
+  height: 350px;
+  margin: 15px;
+  margin-top: 70px;
+  border: 3mm ridge #9b67c8;
+  transition: height 0.5s, width 0.5s;
+  transition: transform 0.5s ease-in-out;
+} 
+
+#cat2:hover {
+  transform: rotate(-3deg);
+}
+
+#cat_video {
+  height: 500px;
+  width: auto;
+  margin: 5px;
+  border: 5mm ridge #9b67c8;
+  transition: height 0.5s, width 0.5s;
+}
+
+#cat_video:hover {
+  height: 510px;
+  transition: height 0.5s, width 0.5s;
+  transition-timing-function: ease-out;
+}
+
+/*css for the Resume page*/
+
+#resume_background {
+  background-image: url(../media/resume_background3.jpg);
+  background-size: cover;
+}
+
+#contact-info {
+  text-align: center;
+  border-style: inset;
+  border-color: rgb(99, 136, 230);
+  margin-left: 375px;
+  margin-right: 375px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  background: rgba(50, 128, 238, 0.4);
+  transition: all .2s ease-in-out; 
+}
+
+#contact-info:hover { 
+  transform: scale(1.1); 
+}
+
+/*css for the Chicago Street Art page*/
+
+#streetart_background {
+  background-image: url(../media/street_art_background.jpg);
+  background-size: cover;
+}
+
+.streert_art_wrapper {
+  width: 950px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: inset;
+  border-color: #d0a4f6;
+  margin: 25px auto 25px auto;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+  box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+}
+
+#mural {
+  height: 500px;
+  display: block;
+  position: relative;
+  margin: 20px;
+  margin-left: 90px;
+  border: 1px solid #d0a4f6;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+  box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+}
+
+.street_img {
+  height: 360px;
+  display: block;
+  position: relative;
+  margin: 20px;
+  border: 1px solid #d0a4f6;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+  box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+} 
+
+.street_img:hover {
+  box-shadow: 0 0 20px #d0a4f6, 0 0 30px #ac5bf2, 0 0 40px #8a18ef;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+  transition-timing-function: ease-out;
+}
+
+#mural:hover {
+  box-shadow: 0 0 20px #d0a4f6, 0 0 30px #ac5bf2, 0 0 40px #8a18ef;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+  transition-timing-function: ease-out;
+}
+
+.neonText {
+  font-family: 'Neonderthaw';
+  text-align: center;
+  font-size: 4em;
+  color: #f1e7fa;
+  text-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+  filter: drop-shadow(3px 6px 3px #8b18ef96);
+}
+
+.neonText:hover {
+  text-shadow: 0 0 20px #d0a4f6, 0 0 30px #ac5bf2, 0 0 40px #8a18ef;
+  font-weight: bold;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+}
+
+.street_p {
+  font-family: 'Source Code Pro';
+  text-align: center;
+  color: #f1e7fa;
+}
+
+#art_video {
+  height: 500px;
+  width: auto;
+  margin: 20px;
+  margin-right: 145px;
+  border: 1px solid #d0a4f6;
+  box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+}
+
+#art_video:hover {
+  box-shadow: 0 0 20px #d0a4f6, 0 0 30px #ac5bf2, 0 0 40px #8a18ef;
+  transition-timing-function: ease-out;
+  filter: drop-shadow(3px 6px 9px #8b18ef96);
+}
+ 
+
