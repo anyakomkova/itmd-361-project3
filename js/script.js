@@ -10,7 +10,7 @@ async function initMap() {
   const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
 
   // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
+  wasabiMap = new Map(document.getElementById("map"), {
     zoom: 4,
     center: position,
     mapId: "DEMO_MAP_ID",
@@ -18,10 +18,16 @@ async function initMap() {
 
   // The marker, positioned at Uluru
   const marker = new AdvancedMarkerView({
-    map: map,
+    map: wasabiMap,
     position: position,
     title: "Wasabi Ramen Logan Square",
   });
+
+  // Add an info window to the Empire State Building marker
+    var wasabiRamenInfo = new google.maps.InfoWindow({
+    content: '<h2>Wasabi Ramen</h2><p>A ramen spot located in Logan Suare</p>4.6 Well-loved by the locals<p>'
+    });
+    wasabiRamenInfo.open(map, wasabiMap);
 }
 
 initMap();
