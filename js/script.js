@@ -1,31 +1,24 @@
 // Initialize and add the map
 let map;
 
-async function initMap() {
-  // The location of Uluru
-  const position = { 41.941182201383675: -87.69221501336075 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
-
-  // The map, centered at Uluru
-  wasabiMap = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
+function initMap() {
+  // The location of Wasabi Ramen
+  var wasabiMap = new google.maps.Map(document.getElementById('map'), {
+  // The map, centered at Wasabi Ramen
+    zoom: 10,
+    center: {lat: 41.94118, lng: -87.69908},
   });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerView({
+  // The marker, positioned at wasabi Ramen
+  var marker = new google.maps.Marker({
     map: wasabiMap,
-    position: position,
+    position: {lat: 41.94118, lng: -87.69908},
     title: "Wasabi Ramen Logan Square",
   });
 
-  // Add an info window to the Empire State Building marker
+  // Add an info window to the Wasabi Ramen marker
     var wasabiRamenInfo = new google.maps.InfoWindow({
-    content: '<h2>Wasabi Ramen</h2><p>A ramen spot located in Logan Suare</p>4.6 Well-loved by the locals<p>'
+    content: '<h3>Wasabi Ramen</h3><p>A ramen spot located in Logan Suare</p>4.6 Well-loved by the locals<p>'
     });
     wasabiRamenInfo.open(map, wasabiMap);
 }
