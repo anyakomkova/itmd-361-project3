@@ -3,17 +3,11 @@ let map;
 
 function initMap() {
   // The location of Wasabi Ramen
-  var wasabiMap = new google.maps.Map(document.getElementById('map'), {
+  var wasabiMap = new google.maps.Map(document.getElementById('d2233a8408ed3065'), {
   // The map, centered at Wasabi Ramen
     zoom: 10,
-    center: {lat: 41.94118, lng: -87.69908},
-  });
-
-  // The marker, positioned at wasabi Ramen
-  var marker = new google.maps.Marker({
-    map: wasabiMap,
-    position: {lat: 41.94118, lng: -87.69908},
-    title: "Wasabi Ramen Logan Square",
+    center: {lat: 41.92496582833456, lng: -87.69116565237047},
+    mapId:'d2233a8408ed3065',
   });
 
   // Add an info window to the Wasabi Ramen marker
@@ -23,4 +17,3 @@ function initMap() {
     wasabiRamenInfo.open(map, wasabiMap);
 }
 
-initMap();
