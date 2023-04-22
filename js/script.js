@@ -2,24 +2,26 @@
 let map;
 
 async function initMap() {
+  // The location of Uluru
+  const position = { 41.941182201383675: -87.69221501336075 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
 
-    const wasabiRamen = {lat: 38.872, lng: -104.996};
-    const { map } = await google.maps.importLibrary("map");
-
-    // The map, centered at Wasabi Ramen
-  
-    map = new Map(document.getElementById("map"), {
-      center: wasabiRamen,
-      zoom: 10,
-      mapId: "RAMEN_MAP",
-    });
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
 
   // The marker, positioned at Uluru
   const marker = new AdvancedMarkerView({
     map: map,
-    position: wasabiRamen,
-    title: "Wasabi",
+    position: position,
+    title: "Wasabi Ramen Logan Square",
   });
 }
-  
-  initMap();
+
+initMap();
