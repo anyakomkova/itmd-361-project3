@@ -3,11 +3,16 @@ let map;
 
 function initMap() {
   // The location of Wasabi Ramen
-  var wasabiMap = new google.maps.Map(document.getElementById('d2233a8408ed3065'), {
+  var wasabiMap = new google.maps.Map(document.getElementById('map'), {
   // The map, centered at Wasabi Ramen
     zoom: 10,
     center: {lat: 41.920119875987375, lng: -87.68949370382387},
-    mapId:'d2233a8408ed3065',
+  });
+
+  let marker = new google.maps.Marker({
+    position: {lat: 41.920119875987375, lng: -87.68949370382387},
+    map: wasabiMap,
+    title: 'Wasabi Ramen'
   });
 
   // Add an info window to the Wasabi Ramen marker
@@ -16,4 +21,6 @@ function initMap() {
     });
     wasabiRamenInfo.open(map, wasabiMap);
 }
+
+initMap();
 
