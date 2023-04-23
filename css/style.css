@@ -327,5 +327,10 @@ li {
   }
 }
 
+#test_background {
+  background-image: url(../media/test_background.jpg);
+  background-size: cover;
+}
+
  
 
