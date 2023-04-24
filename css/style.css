@@ -295,49 +295,7 @@ li {
   filter: drop-shadow(15px 20px 0px #4560c4);
 }
 
-/*css for responsive navbar*/
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: rgb(192, 99, 193, 0.75);
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  text-align: justify;
-  text-decoration: none;
-  font-family: 'Press Start 2P';
-  color: #431d65;
-  font-size: medium;
-  padding: 10px 20px;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: rgb(85, 67, 133);
-  color: #f1e7fa;
-  text-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-
-#test_background {
-  background-image: url(../media/test_background.jpg);
-  background-size: cover;
-}
-
-/*css for media queries*/
+/* css for mobile friendly pages */
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
