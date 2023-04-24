@@ -304,20 +304,40 @@ li {
 }
 
 /* Style the topnav links */
-.topnav a {
+/*.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
+  text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
   margin: auto;
+}*/
+
+.topnav a {
+  display: block;
+  text-align: justify;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: auto;
+  background-color: rgb(192, 99, 193, 0.75);
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 50%;
+  font-family: 'Press Start 2P';
+  color: #431d65;
+  font-size: medium;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: rgb(85, 67, 133);
+  color: #f1e7fa;
+  text-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
