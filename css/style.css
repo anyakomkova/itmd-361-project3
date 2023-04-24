@@ -304,29 +304,13 @@ li {
 }
 
 /* Style the topnav links */
-/*.topnav a {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-}*/
-
-.topnav a {
-  display: block;
-  text-align: justify;
-  padding: 14px 16px;
-  text-decoration: none;
-  margin: auto;
-  background-color: rgb(192, 99, 193, 0.75);
-  float: left;
-  width: 100%;
-  position: relative;
-  right: 50%;
-  font-family: 'Press Start 2P';
-  color: #431d65;
-  font-size: medium;
 }
 
 /* Change color on hover */
