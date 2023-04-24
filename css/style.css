@@ -311,7 +311,6 @@ li {
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  margin: auto;
 }*/
 
 .topnav a {
@@ -321,7 +320,6 @@ li {
   text-decoration: none;
   margin: auto;
   background-color: rgb(192, 99, 193, 0.75);
-  overflow: hidden;
   float: left;
   width: 100%;
   position: relative;
