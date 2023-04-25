@@ -6,7 +6,7 @@
 
 body {
   background-color: rgb(192, 99, 193);
-    align-items: center;
+  align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -24,12 +24,7 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Press Start 2P';
-  text-align: center;
-}
-
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Press Start 2P';
   text-align: center;
 }
@@ -305,35 +300,32 @@ li {
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px){
 
+  h1, h2, h3, h4, h5 {
+    font-size: medium;
+  }
+
+  p {
+    font-size: medium;
+  }
+
   #nav-contain {
     float: none;
     width: 100%;
-    align-items: center;
-    justify-content: center;
   }
 
   #nav ul {
     float: none;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   #nav ul li {
     float: none;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   #nav ul li a {
     float: none;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   .wrapper {
@@ -347,6 +339,21 @@ li {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+  }
+
+  .streert_art_wrapper {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: inset;
+    border-color: #d0a4f6;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    filter: drop-shadow(3px 6px 9px #8b18ef96);
+    box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
   }
 }
 
