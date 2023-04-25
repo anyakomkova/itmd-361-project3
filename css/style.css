@@ -8,6 +8,7 @@ body {
   background-color: rgb(192, 99, 193);
     align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .wrapper {
