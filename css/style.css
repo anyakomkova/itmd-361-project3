@@ -246,7 +246,7 @@ li {
 .neonText {
   font-family: 'Neonderthaw';
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   color: #f1e7fa;
   text-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
   filter: drop-shadow(3px 6px 3px #8b18ef96);
@@ -354,6 +354,10 @@ li {
     box-sizing: border-box;
     filter: drop-shadow(3px 6px 9px #8b18ef96);
     box-shadow: 0 0 15px #d0a4f6, 0 0 25px #ac5bf2, 0 0 35px #8a18ef;
+  }
+
+  .neonText {
+    font-size: 3em;
   }
 }
 
