@@ -363,8 +363,7 @@ li {
   }
 
   #map {
-    height: auto;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-bottom: 20px;
     filter: drop-shadow(15px 20px 0px #4560c4);
