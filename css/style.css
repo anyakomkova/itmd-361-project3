@@ -291,7 +291,7 @@ li {
 
 #map {
   height: 500px;
-  width: auto;
+  width: 400px;
   margin: auto;
   margin-bottom: 20px;
   filter: drop-shadow(15px 20px 0px #4560c4);
