@@ -6,6 +6,8 @@
 
 body {
   background-color: rgb(192, 99, 193);
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
@@ -13,7 +15,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-style: inset;
   border-color: rgb(119, 21, 199);
-  margin: 25px auto 25px auto;
+  margin: 20% auto 20% auto;
   padding: 10px;
   padding-left: 5px;
   padding-right: 5px;
