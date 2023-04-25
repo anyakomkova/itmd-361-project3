@@ -12,12 +12,12 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  width: 70%;
   background-color: rgba(255, 255, 255, 0.5);
   border-style: inset;
   border-color: rgb(119, 21, 199);
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 20px;
   align-items: center;
   justify-content: center;
@@ -201,12 +201,12 @@ li {
 }
 
 .streert_art_wrapper {
-  width: 80%;
+  width: 70%;
   background-color: rgba(0, 0, 0, 0.5);
   border-style: inset;
   border-color: #d0a4f6;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 20px;
   align-items: center;
   justify-content: center;
@@ -323,6 +323,19 @@ li {
   #nav ul li a {
     float: none;
     width: 100%;
+  }
+
+  .wrapper {
+    width: 900%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: inset;
+    border-color: rgb(119, 21, 199);
+    margin: auto;
+    margin-top: 30px;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 }
 
