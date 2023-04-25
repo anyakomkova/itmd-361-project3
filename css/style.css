@@ -322,6 +322,8 @@ li {
   #nav ul li {
     float: none;
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   #nav ul li a {
