@@ -315,6 +315,8 @@ li {
   #nav ul {
     float: none;
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   #nav ul li {
