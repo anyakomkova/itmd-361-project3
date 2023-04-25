@@ -173,11 +173,12 @@ li {
 }
 
 #contact-info {
+  width: 40%;
   text-align: center;
   border-style: inset;
   border-color: rgb(99, 136, 230);
-  margin-left: 375px;
-  margin-right: 375px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 25px;
   margin-top: 25px;
   padding: 10px;
@@ -301,7 +302,7 @@ li {
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px){
 
-  h1 {
+  h1, h2 {
     font-size: 1.5em;
   }
 
@@ -359,6 +360,14 @@ li {
 
   .neonText {
     font-size: 3em;
+  }
+
+  #map {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(15px 20px 0px #4560c4);
   }
 }
 
