@@ -27,8 +27,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Press Start 2P';
   text-align: center;
-  color: #431d65;
-  font-size: larger;
+  font-size: large;
+  filter: drop-shadow(3px 30px 0px #9b67c8);
 }
 
 p {
